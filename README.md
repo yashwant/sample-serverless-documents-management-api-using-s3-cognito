@@ -4,11 +4,14 @@ This is just a serverless sample app to access private files to S3 Bucket for co
 ##Steps to run the app
 - Clone to your machine
 ```
-$ git clone <repo url>
+$ git clone https://github.com/yashwant/sample-serverless-documents-management-api-using-s3-cognito
+
 ```
 
 - Install dependencies
 ```
+$ cd sample-serverless-documents-management-api-using-s3-cognito
+
 $ npm install
 ```
 
