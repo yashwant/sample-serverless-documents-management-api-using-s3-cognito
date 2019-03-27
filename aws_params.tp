@@ -1,0 +1,13 @@
+region: us-east-1
+stage: dev
+profile: <aws profile>
+DEPLOYMENT_S3_BUCKET: <deployment bucket>
+INPUT_S3_BUCKET: <bucket name>
+
+INPUT_S3_BUCKET_FOLDER: private
+#final user pool name is "stage-pool"
+UserPoolName: user-pool
+#final client name is "stage-pool-client"
+ClientName: client
+#stage prefix is applied to final IdentityPoolName
+IdentityPoolName: IdentityPool

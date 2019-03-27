@@ -1,0 +1,26 @@
+Resources:
+  DocumentsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${file(./aws_params.yml):INPUT_S3_BUCKET}
+      # Set the CORS policy
+      CorsConfiguration:
+        CorsRules:
+          -
+            AllowedOrigins:
+              - '*'
+            AllowedHeaders:
+              - '*'
+            AllowedMethods:
+              - GET
+              - PUT
+              - POST
+              - DELETE
+              - HEAD
+            MaxAge: 3000
+
+# Print out the name of the bucket that is created
+Outputs:
+  DocumentsBucketName:
+    Value:
+      Ref: DocumentsBucket
